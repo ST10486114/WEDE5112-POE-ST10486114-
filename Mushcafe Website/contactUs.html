@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact MushCafe | Get in Touch</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Contact MushCafe Grilled Chicken for enquiries, catering, or feedback. Visit us in Roodepoort or send a message online.">
+  <meta name="keywords" content="MushCafe, contact, grilled chicken, enquiries, catering, Roodepoort">
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+   <!-- Navbar -->
+  <nav>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="aboutUs.html">About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="ourservices.html">Our Services</a>
+        <a href="enquiries.html">Enquiries</a>
+        <a href="contactUs.html">Contact Us</a>
+      </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="images/MushCafe Griiled Chicken.jfif" width="220" height="300" alt="MushCafe Grilled Chicken Logo">
+    <h1>Contact MushCafe</h1>
+    <p>We’d love to hear from you! Whether it’s feedback, catering, or general enquiries — we’re here to help.</p>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section>
+    <h2>Send Us a Message</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Other Contact Info -->
+  <section>
+    <h2>Visit or Call Us</h2>
+    <p>
+      📍 <strong>Address:</strong><br>
+      2488 Rose Road, Fleurhof,<br>
+      Roodepoort, South Africa<br><br>
+
+      📞 <strong>Phone:</strong> 068 058 9157<br>
+      📧 <strong>Email:</strong> info@mushcafe.com<br>
+      🍗 <strong>Open Daily:</strong> 09:00 AM – 8:00 PM
+    </p>
+
+    <h3>Follow Us</h3>
+    <ul>
+      <li>Facebook: facebook.com/MushCafe</li>
+      <li>Instagram: @MushCafeGrill</li>
+      <li>Twitter: @MushCafe</li>
+    </ul>
+  </section>
+
+  <!-- Google Map -->
+  <section>
+    <h2>Find Us</h2>
+    <iframe 
+      src="https://www.google.com/maps?q=2488+Rose+Road+Fleurhof,+Roodepoort,+South+Africa&output=embed"
+      width="100%"
+      height="350"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MushCafe Grilled Chicken | Designed by Irvin Thwala</p>
+  </footer>
+
+  <!-- JavaScript Validation -->
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("⚠️ Please fill in all required fields before submitting.");
+        return false;
+      }
+
+      alert("✅ Message sent successfully! We'll get back to you soon.");
+      return true;
+    }
+  </script>
+  <!-- JavaScript -->
+  <script>
+    window.onload = function() {
+      alert("🍔 Want to contact us — Dont be afraid we got you");
+    };
+  </script>
+</body><?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.yourdomain.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.yourdomain.com/contactUs.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- add other pages similarly -->
+</urlset>
+</html>
